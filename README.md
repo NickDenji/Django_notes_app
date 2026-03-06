@@ -1,1 +1,5 @@
-This is for level 1 Task 25 Part 3
+# Example Repo
+
+This project contains code that prints messages in Python (or other code I’ve written). It demonstrates basic programming concepts and Git workflow.
+
+GitHub Repository: https://github.com/NickDenji/example-repo
