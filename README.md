@@ -29,4 +29,4 @@ notes/ - application containing models, views, forms, and URLs
 templates/notes/ - HTML templates
 static/css/styles.css - styling
 manage.py - Django management script
-File Structure:
+
