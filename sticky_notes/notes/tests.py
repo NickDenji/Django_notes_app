@@ -13,6 +13,7 @@ class NoteModelTest(TestCase):
         note = Note.objects.create(title="Test", content="Hello")
         self.assertEqual(note.title, "Test")
 
+    
     def test_str_method(self):
         """
         Test that the string representation of the Note
@@ -34,6 +35,7 @@ class NoteViewsTest(TestCase):
             content="Test Content"
         )
 
+    
     def test_note_list_view(self):
         """
         Test the 'View Notes' use case.
@@ -48,6 +50,7 @@ class NoteViewsTest(TestCase):
         # Check the note appears on the page
         self.assertContains(response, "Test Note")
 
+    
     def test_note_detail_view(self):
         """
         Test the 'View Note Detail' use case.
@@ -63,6 +66,7 @@ class NoteViewsTest(TestCase):
         # Check correct note content is displayed
         self.assertContains(response, "Test Note")
 
+    
     def test_note_create_view(self):
         """
         Test the 'Create Note' use case.
@@ -82,6 +86,7 @@ class NoteViewsTest(TestCase):
         # Check that a new note was added to the database
         self.assertEqual(Note.objects.count(), 2)
 
+    
     def test_note_update_view(self):
         """
         Test the 'Edit Note' use case.
@@ -102,6 +107,7 @@ class NoteViewsTest(TestCase):
         self.note.refresh_from_db()
         self.assertEqual(self.note.title, "Updated Note")
 
+    
     def test_note_delete_view(self):
         """
         Test the 'Delete Note' use case.
